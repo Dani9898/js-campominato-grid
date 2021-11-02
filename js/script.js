@@ -34,7 +34,12 @@ console.log(indiceCelle);
 
 
 for (let i = 0; i < indiceCelle; i++) {
-    elementoGen("div", "square");  
+    // elementoGen("div", "square");
+    elementoGen("div", "square").addEventListener("click",
+        function () {
+            this.classList.add("active");
+        }
+    ); 
 }
 
 
@@ -48,10 +53,3 @@ for (let i = 0; i < indiceCelle; i++) {
     }
 }
 
-for (let i = 0; i < indiceCelle; i++) {
-    squareCont[i].addEventListener("click",
-        function () {
-            this.classList.add("active");
-        }
-    );
-}
