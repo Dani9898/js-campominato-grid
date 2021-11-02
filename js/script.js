@@ -38,9 +38,13 @@ for (let i = 0; i < indiceCelle; i++) {
     elementoGen("div", "square").addEventListener("click",
         function () {
             this.classList.add("active");
+            this.innerHTML = i+1;
         }
-    ); 
+    );
 }
+
+
+
 
 
 let squareCont = document.querySelectorAll(".square");
